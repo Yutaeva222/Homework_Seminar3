@@ -1,4 +1,11 @@
-﻿Console.Clear();
+﻿// Задача 19.
+// Напишите программу, которая принимает на вход пятизначное число и проверяет, 
+// является ли оно палиндромом.
+// 14212 -> нет
+// 12821 -> да
+// 23432 -> да
+
+Console.Clear();
 int Input()
 {
     Console.WriteLine("Введите пятизначное число: ");
@@ -14,11 +21,11 @@ void zadacha()
     int five = num % 10;
     if (one == five && two == four)
     {
-        Console.WriteLine("Это число полиндром! ");
+        Console.WriteLine("Это число палиндром! ");
     }
     else 
     {
-        Console.WriteLine("Это число НЕ полиндром! ");
+        Console.WriteLine("Это число НЕ палиндром! ");
     }
 }
 zadacha();
